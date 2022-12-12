@@ -28,18 +28,25 @@ namespace RegexTestUserResistration
             bool result = Regex.IsMatch(lastName, regex);
             return result;
         }
-        ///uc2:Email
+        ///uc3:Email
         public bool Email(string email)
         {
             string regex = "^[a-z]{3,}[.][a-z]{3,}[@]{1}[a-z]{2,}[.][a-z]{2,}[.][a-z]{2,}$";
             bool result = Regex.IsMatch(email, regex);
             return result;
         }
-        ///uc2:Mobuile number
+        ///uc4:Mobuile number
         public bool MobileNum(string mobile)
         {
             string regex = "^[9]{1}[1]{1}[\\s][7-9]{1}[0-9]{9}$";
             bool result = Regex.IsMatch(mobile, regex);
+            return result;
+        }
+        ///uc5:PassWord rule1
+        public bool Password1(string password)
+        {
+            string regex = "^[a-zA-Z0-9]{8,}$";
+            bool result = Regex.IsMatch(password, regex);
             return result;
         }
     }

@@ -66,5 +66,20 @@ namespace RegexTestProject1
             //Assert
             Assert.AreEqual(result, actual);
         }
+
+        [TestMethod]
+        [TestCategory("Password rule1")]    //Minimum 8 charecters
+        [DataRow("AnilBamn", true)]
+        [DataRow("abxu", false)]
+        [DataRow("aaaaaaaaaaaaa", true)]
+        public void Rule1(string password, bool result)
+        {
+            ///AAA -> Arrange Act Assert
+            Patterns p = new Patterns();
+            //Act
+            bool actual = p.Password1(password);
+            //Assert
+            Assert.AreEqual(result, actual);
+        }
     }
 }
