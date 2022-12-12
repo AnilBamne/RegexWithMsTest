@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexTestUserResistration", "RegexTestUserResistration\RegexTestUserResistration.csproj", "{7B77573C-2A4B-4703-806B-1EF9E0ECD619}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegexTestUserResistration", "RegexTestUserResistration\RegexTestUserResistration.csproj", "{7B77573C-2A4B-4703-806B-1EF9E0ECD619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexTestProject1", "RegexTestProject1\RegexTestProject1.csproj", "{F2BA4B0B-EE26-4A97-BDCA-71D20CA34144}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7B77573C-2A4B-4703-806B-1EF9E0ECD619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B77573C-2A4B-4703-806B-1EF9E0ECD619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B77573C-2A4B-4703-806B-1EF9E0ECD619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BA4B0B-EE26-4A97-BDCA-71D20CA34144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BA4B0B-EE26-4A97-BDCA-71D20CA34144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BA4B0B-EE26-4A97-BDCA-71D20CA34144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BA4B0B-EE26-4A97-BDCA-71D20CA34144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
