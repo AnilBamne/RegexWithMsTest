@@ -35,5 +35,12 @@ namespace RegexTestUserResistration
             bool result = Regex.IsMatch(email, regex);
             return result;
         }
+        ///uc2:Mobuile number
+        public bool MobileNum(string mobile)
+        {
+            string regex = "^[9]{1}[1]{1}[\\s][7-9]{1}[0-9]{9}$";
+            bool result = Regex.IsMatch(mobile, regex);
+            return result;
+        }
     }
 }

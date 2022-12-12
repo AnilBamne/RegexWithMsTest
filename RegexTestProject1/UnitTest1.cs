@@ -36,6 +36,7 @@ namespace RegexTestProject1
             //Assert
             Assert.AreEqual(result, actual);
         }
+
         [TestMethod]
         [TestCategory("Email")]
         [DataRow("abc.xyz@bl.co.in", true)]
@@ -47,6 +48,21 @@ namespace RegexTestProject1
             Patterns p = new Patterns();
             //Act
             bool actual = p.Email(email);
+            //Assert
+            Assert.AreEqual(result, actual);
+        }
+
+        [TestMethod]
+        [TestCategory("MobileNum")]
+        [DataRow("91 8152817066", true)]
+        [DataRow("99999999", false)]
+        [DataRow("9181528170", false)]
+        public void MobileNum(string mobile, bool result)
+        {
+            ///AAA -> Arrange Act Assert
+            Patterns p = new Patterns();
+            //Act
+            bool actual = p.MobileNum(mobile);
             //Assert
             Assert.AreEqual(result, actual);
         }
