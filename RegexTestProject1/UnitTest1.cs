@@ -21,5 +21,20 @@ namespace RegexTestProject1
             //Assert
             Assert.AreEqual(result, actual);
         }
+
+        [TestMethod]
+        [TestCategory("LastName")]
+        [DataRow("Bamne", true)]
+        [DataRow("anil", false)]
+        [DataRow("xyz", false)]
+        public void TestLastName(string fName, bool result)
+        {
+            ///AAA -> Arrange Act Assert
+            Patterns p = new Patterns();
+            //Act
+            bool actual = p.FirstName(fName);
+            //Assert
+            Assert.AreEqual(result, actual);
+        }
     }
 }
