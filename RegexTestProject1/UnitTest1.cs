@@ -32,7 +32,21 @@ namespace RegexTestProject1
             ///AAA -> Arrange Act Assert
             Patterns p = new Patterns();
             //Act
-            bool actual = p.FirstName(fName);
+            bool actual = p.LastName(fName);
+            //Assert
+            Assert.AreEqual(result, actual);
+        }
+        [TestMethod]
+        [TestCategory("Email")]
+        [DataRow("abc.xyz@bl.co.in", true)]
+        [DataRow("anil.12@gmail.com", false)]
+        [DataRow("abc.xyz@bl.com", false)]
+        public void TestEmail(string email, bool result)
+        {
+            ///AAA -> Arrange Act Assert
+            Patterns p = new Patterns();
+            //Act
+            bool actual = p.Email(email);
             //Assert
             Assert.AreEqual(result, actual);
         }

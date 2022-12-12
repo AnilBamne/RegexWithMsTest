@@ -28,5 +28,12 @@ namespace RegexTestUserResistration
             bool result = Regex.IsMatch(lastName, regex);
             return result;
         }
+        ///uc2:Email
+        public bool Email(string email)
+        {
+            string regex = "^[a-z]{3,}[.][a-z]{3,}[@]{1}[a-z]{2,}[.][a-z]{2,}[.][a-z]{2,}$";
+            bool result = Regex.IsMatch(email, regex);
+            return result;
+        }
     }
 }
